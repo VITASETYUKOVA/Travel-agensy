@@ -1,0 +1,9 @@
+$header-height: 80px;
+
+.main {
+  margin-top: -170px;
+
+  @media (max-width: $size-screen-tablet) {
+    margin-top: +$header-height;
+  }
+}

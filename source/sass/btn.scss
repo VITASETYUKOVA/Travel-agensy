@@ -1,0 +1,61 @@
+.btn {
+  $width: 40px;
+  $height: 30px;
+  background: none;
+  width: $width;
+  height: $height;
+  border: 0;
+  padding: 0;
+  position: fixed;
+  top: 20px;
+  right: 15px;
+  z-index: 20;
+
+  .nav--open & {
+    .btn__line {
+      &--2 {
+        opacity: 0;
+        transition: opacity 0.1s linear 0.3s;
+      }
+
+      &--1 {
+        top: 50%;
+        margin-top: -1px;
+        transform: rotate(45deg);
+        transition: top 0.3s linear, transform 0.3s linear 0.3s;
+      }
+
+      &--3 {
+        top: 50%;
+        margin-top: -1px;
+        transform: rotate(-45deg);
+        transition: top 0.3s linear, transform 0.3s linear 0.3s;
+      }
+    }
+  }
+}
+
+.btn__line {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: $main-color-text;
+  top: 0;
+  left: 0;
+
+  &--1 {
+    transition: transform 0.3s linear, top 0.3s linear 0.3s;
+  }
+
+  &--2 {
+    top: 50%;
+    margin-top: -1px;
+    transition: opacity 0.1s linear 0.3s;
+  }
+
+  &--3 {
+    top: 100%;
+    margin-top: -2px;
+    transition: transform 0.3s linear, top 0.3s linear 0.3s;
+  }
+}

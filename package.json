@@ -1,0 +1,50 @@
+{
+  "name": "Logoipsum",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Logoipsum",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "^9.5.x",
+    "browser-sync": "^2.27.7",
+    "del": "^6.0.0",
+    "gulp": "4.0.x",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "9.0.x",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "3.0.x",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.49.0",
+    "stylelint": "^10.1.x",
+    "stylelint-config-htmlacademy": "^0.1.x"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass//*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "gulp start",
+    "dev": "gulp dev"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js//*.js",
+    "source/img//*.svg",
+    "source/sass//*.{sass,scss}"
+  ],
+  "engines": {
+    "node": "16.8.0"
+  }
+}

@@ -1,0 +1,134 @@
+.nav__link {
+  display: block;
+  color: $main-color-text;
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 6.5px 17px;
+  margin: 24px 0;
+
+  @media (max-width: $size-screen-tablet) {
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+    color: $color-text-1;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    padding: 20px;
+    font-size: 13px;
+  }
+
+  &:hover {
+    color: rgb(70, 193, 174);
+  }
+}
+
+.nav__link--active {
+  text-decoration: underline 2px $color-background;
+  text-underline-offset: 10px;
+  color: $color-background;
+  padding: 6.5px 17px;
+}
+
+.nav__link-btn {
+  display: inline-block;
+  font-family: $main-font;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  color: $color-text-1;
+  background-color: $color-background;
+  border-radius: 4px;
+  max-width: 200px;
+  background-clip: padding-box;
+  padding: 12px 24px;
+  min-height: 54px;
+  cursor: pointer;
+
+  @media (max-width: $size-screen-tablet) {
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    padding: 20px;
+    font-size: 13px;
+  }
+
+  &:hover,
+  &:active {
+    border-radius: 30px;
+    color: $main-color-text-hover;
+
+    @media (max-width: $size-screen-tablet) {
+      border-radius: 0;
+    }
+  }
+
+  &:hover {
+    background-color: $main-color-text-hover;
+  }
+
+  &:active {
+    background-color: $main-color-text;
+  }
+}
+
+.link__avatar {
+  position: absolute;
+  vertical-align: middle;
+  border-radius: 32px;
+  flex-shrink: 0;
+  transform: translate(0, -6px);
+
+  @media (max-width: $size-screen-tablet) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.main__link.nav__link--user {
+  display: inline-block;
+  min-height: 40px;
+  padding: 9px 12px 8px 4px;
+  min-width: 130px;
+  max-width: 300px;
+  border-radius: 156px;
+  border: 1.5px solid $color-background;
+  background: $color-background-1;
+  position: relative;
+  color: $main-color-text;
+  text-align: end;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  box-sizing: border-box;
+
+  @media (max-width: $size-screen-tablet) {
+    font-size: 0;
+    text-align: center;
+    min-width: 40px;
+    max-width: 80px;
+    border-radius: 50%;
+    min-height: 40px;
+    padding: 3px;
+  }
+}
+
+.nav__container {
+  display: flex;
+}
+
+.nav__item {
+  @media (max-width: $size-screen-tablet) {
+    flex-grow: 1;
+    font-size: 15px;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    width: 100%;
+    text-align: center;
+  }
+}

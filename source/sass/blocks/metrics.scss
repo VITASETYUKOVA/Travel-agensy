@@ -1,0 +1,154 @@
+.metrics {
+  padding: 83px 80px;
+  justify-content: center;
+  align-items: center;
+  background: #f8fafc;
+
+  @media (max-width: $size-screen-tablet) {
+    padding: 0 0 83px 0px;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+}
+
+.metrics__inner {
+  display: grid;
+  grid-template-areas:
+    "first second four"
+    "first third five";
+
+  grid-template-columns: 688px 280px 280px;
+  grid-column-gap: 24px;
+  grid-row-gap: 40px;
+
+  @media (max-width: $size-screen-tablet) {
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 0;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    display: block;
+    padding-left: 0px;
+  }
+}
+
+.metrics__text {
+  gap: 8px;
+  grid-area: first;
+}
+
+.metrics__title {
+  color: #111827;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  margin-bottom: 8px;
+  margin-top: 27px;
+
+  @media (max-width: $size-screen-tablet) {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    font-size: 16px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+.metrics__description {
+  color: #374151;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+
+  @media (max-width: $size-screen-tablet) {
+    font-size: 18px;
+    line-height: 1;
+    margin: 20px 0;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    font-size: 25px;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+}
+
+.metrics__heading {
+  color: #111827;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px; /* 125% */
+  letter-spacing: -0.9px;
+  align-self: stretch;
+}
+
+.metrics__inform {
+  color: #374151;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  align-self: stretch;
+}
+
+.metrics__item.metrics__item--customers {
+  grid-area: second;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  @media (max-width: $size-screen-mobile) {
+    justify-content: center;
+  }
+}
+
+.metrics__item.metrics__item--experience {
+  grid-area: third;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  @media (max-width: $size-screen-mobile) {
+    justify-content: center;
+  }
+}
+
+.metrics__item.metrics__item--delivery {
+  grid-area: four;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  @media (max-width: $size-screen-mobile) {
+    justify-content: center;
+  }
+}
+
+.metrics__item.metrics__item--trustpilot {
+  grid-area: five;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  @media (max-width: $size-screen-mobile) {
+    justify-content: center;
+    margin-right: 24px;
+  }
+}
+
+.metrics__rating {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+

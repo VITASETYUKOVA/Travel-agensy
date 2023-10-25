@@ -1,0 +1,62 @@
+.nav {
+  @media (max-width: $size-screen-tablet) {
+    margin-left: 0;
+  }
+}
+
+.nav__container {
+  display: flex;
+
+  @media (max-width: $size-screen-tablet) {
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    left: -100%;
+    background-color: $color-background-4;
+    bottom: 0;
+    top: 70px;
+    padding-top: 15px;
+    transition: left 0.5s;
+
+    .nav--open & {
+      left: 0;
+    }
+  }
+}
+
+.nav__btn {
+  display: none;
+
+  @media (max-width: $size-screen-tablet) {
+    display: block;
+  }
+}
+
+.nav__list {
+  display: flex;
+  min-width: 400px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (max-width: $size-screen-tablet) {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 50px;
+    position: static;
+    left: 0%;
+    transform: translate(0%);
+    align-self: center;
+  }
+}
+
+.user__wrapper {
+  display: flex;
+  margin-left: auto;
+
+  @media (max-width: $size-screen-tablet) {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}

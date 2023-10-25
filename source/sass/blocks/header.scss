@@ -1,0 +1,135 @@
+.header {
+  height: 80px;
+  flex-shrink: 0;
+  @media (max-width: $size-screen-tablet) {
+    height: 70px;
+    position: fixed;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: $color-background-4;
+  }
+}
+
+.nav__contactWrapper {
+  display: flex;
+  margin-left: auto;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $size-screen-tablet) {
+    padding-top: 0;
+  }
+}
+
+.header__title {
+  margin-right: 63px;
+
+  & img {
+    width: 58px;
+    height: 40px;
+    margin: 0 auto;
+
+    @media (max-width: $size-screen-tablet) {
+      height: 41px;
+      width: auto;
+    }
+  }
+
+  @media (max-width: $size-screen-tablet) {
+    margin: 0;
+    padding: 10px 0;
+  }
+}
+
+.nav__link.nav__link--user.nav__link-btn {
+  display: inline-block;
+  font-family: $main-font;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: normal;
+  text-align: center;
+  color: $main-color-text;
+  border-radius: 156px;
+  border: 1.5px solid $color-background;
+  background: $color-background-1;
+  width: 130px;
+  background-clip: padding-box;
+  margin-right: 80px;
+  min-height: 32px;
+  cursor: pointer;
+
+  @media (max-width: $size-screen-tablet) {
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    padding: 20px;
+    font-size: 13px;
+  }
+
+  &:hover,
+  &:active {
+    border-radius: 30px;
+    color: $main-color-text-hover;
+
+    @media (max-width: $size-screen-tablet) {
+      border-radius: 0;
+    }
+  }
+
+  &:hover {
+    background-color: $main-color-text-hover;
+  }
+
+  &:active {
+    background-color: $main-color-text;
+  }
+}
+
+.nav__sorting {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 8px;
+  box-sizing: border-box;
+  font-family: $main-font;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  color: $color-text-1;
+  border-radius: 6px;
+  background: $color-background;
+  background-clip: padding-box;
+  padding: 12px 14px;
+  min-height: 40px;
+  cursor: pointer;
+  background-image: url(/img/arrowDown.svg);
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  appearance: none;
+  margin-right: 20px;
+  max-width: 104px;
+  outline: 0;
+  border: 0;
+
+  @media (max-width: $size-screen-tablet) {
+    background: transparent;
+    text-align: center;
+    margin-right: 0;
+    align-items: center;
+    color: $color-background;
+  }
+
+  &:active {
+    outline: 0;
+  }
+}
+
+.header__logo {
+  fill: $color-background-2;
+}

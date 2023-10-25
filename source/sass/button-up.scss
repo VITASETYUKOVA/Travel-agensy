@@ -1,0 +1,37 @@
+.button-up {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background-color: #f3f3f5;
+  cursor: pointer;
+  margin: auto;
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
+  z-index: 100;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 50%;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    margin-left: -3px;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    left: 0;
+    margin-left: 3px;
+  }
+
+  &--open {
+    display: block;
+  }
+}

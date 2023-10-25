@@ -1,0 +1,99 @@
+.header {
+  
+  height: 118px;
+margin-bottom: 0;
+  @media (max-width: $size-screen-tablet) {
+    height: 70px;
+    position: fixed;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: $color-background;
+    z-index:100;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  padding-top: 32px;
+  align-items: center;
+  position: relative;
+
+  @media (max-width: $size-screen-tablet) {
+    display: block;
+    padding-top: 0;
+  }
+}
+
+.header__title {
+  margin-left: 70px;
+  margin-right: auto;
+
+  & img {
+    margin: 0 auto;
+
+    @media (max-width: $size-screen-tablet) {
+      height: 41px;
+      width: auto;
+    }
+  }
+
+  @media (max-width: $size-screen-tablet) {
+    margin: 0;
+    padding: 10px 0;
+  }
+}
+
+.nav__link-btn {
+  display: inline-block;
+  font-family: $main-font;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 160%;
+  text-align: center;
+  color: $color-text-6;
+  background-color: $color-background-2;
+  border-radius: 4px;
+  width: 200px;
+  background-clip: padding-box;
+  padding: 12px 24px;
+  min-height: 54px;
+  cursor: pointer;
+
+  @media (max-width: $size-screen-tablet) {
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    padding: 20px;
+    font-size: 13px;
+  }
+
+  &:hover,
+  &:active {
+    border-radius: 30px;
+    color: $color-text-2;
+
+    @media (max-width: $size-screen-tablet) {
+      border-radius: 0;
+    }
+  }
+
+  &:hover {
+    background-color: $main-color-text-hover;
+  }
+
+  &:active {
+    background-color: $main-color-text;
+  }
+}
+
+.nav__contact-wrapper {
+  margin-right: 70px;
+
+  @media (max-width: $size-screen-tablet) {
+    align-self: center;
+    margin-right: 0;
+  }
+}

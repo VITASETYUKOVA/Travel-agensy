@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html class="page" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Logoipsum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="/css/styles.min.css" as="style" />
+    <link rel="stylesheet" href="/css/styles.min.css" />
+  </head>
+  <body>
+    <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="toggle-left" viewBox="0 0 54 54">
+        <circle cx="27" cy="27" r="27" fill="#F3F3F3" />
+        <g clip-path="url(#a)">
+          <path
+            fill="#2C2C2C"
+            d="M22.328 26H34.5v2H22.328l5.364 5.364-1.414 1.414L18.5 27l7.778-7.778 1.414 1.414L22.328 26Z"
+          />
+        </g>
+        <defs>
+          <clipPath id="a">
+            <path fill="#fff" d="M14.5 15h24v24h-24z" />
+          </clipPath>
+        </defs>
+      </symbol>
+      <symbol id="toggle-right" viewBox="0 0 54 54">
+        <circle cx="27" cy="27" r="27" fill="#54C1FF" />
+        <g clip-path="url(#b)">
+          <path
+            fill="#fff"
+            d="m30.672 26-5.364-5.364 1.414-1.414L34.5 27l-7.778 7.778-1.414-1.414L30.672 28H18.5v-2h12.172Z"
+          />
+        </g>
+        <defs>
+          <clipPath id="b">
+            <path fill="#fff" d="M14.5 15h24v24h-24z" />
+          </clipPath>
+        </defs>
+      </symbol>
+    </svg>
+    <div class="site">
+      <header class="header wrapper">
+        <div class="header__wrapper">
+          <h1 class="header__title">
+            <a href="#" class="header__logo">
+              <img src="/img/logo.svg" alt="logo" />
+            </a>
+          </h1>
+          <nav class="nav">
+            <button class="nav__btn btn" type="button">
+              <span class="btn__line btn__line--1"></span>
+              <span class="btn__line btn__line--2"></span>
+              <span class="btn__line btn__line--3"></span>
+            </button>
+            <div class="nav__container">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link nav__link--active" href="index.html"
+                    >Travel Document</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="index.html">Passport</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="index.html">Photos</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="index.html">Contact us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="user__wrapper">
+            <form class="nav__type">
+              <div class="nav__select">
+                <label class="nav__width">
+                  <select class="nav__sorting" id="country" name="country">
+                    <option
+                      class="nav__country"
+                      value="es_SP"
+                      data-locale="es_SP"
+                    >
+                      Spanish
+                    </option>
+                    <option
+                      class="nav__country"
+                      value="uk_UK"
+                      data-locale="uk_UK"
+                    >
+                      Український
+                    </option>
+                    <option
+                      class="nav__country"
+                      value="de_GR"
+                      data-locale="de_GR"
+                    >
+                      Germany
+                    </option>
+                    <option
+                      class="nav__country"
+                      value="fr_Fr"
+                      data-locale="fr_FR"
+                    >
+                      French
+                    </option>
+                    <option
+                      class="nav__country"
+                      value="pl_Pl"
+                      data-locale="pl_PL"
+                    >
+                      Polish
+                    </option>
+                    <option
+                      class="nav__country"
+                      value="en_UK"
+                      data-locale="en_UK"
+                      selected=""
+                    >
+                      English
+                    </option>
+                  </select>
+                </label>
+              </div>
+              <button class="visually-hidden" type="submit">
+                Выбрать язык
+              </button>
+            </form>
+            <a
+              class="main__link nav__link--user"
+              href="#"
+              title="Johan Alex"
+              data-nav="user"
+            >
+              <img
+                class="link__avatar"
+                src="/img/JohanAlex.png"
+                alt="Johan Alex"
+              />
+              <span class="link__username">Johan Alex</span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="sorting">
+          <div class="wrapper">
+            <div class="sorting__inner">
+              <div class="sorting__information">
+                <h2 class="sorting__heading">
+                  Online
+                  <span class="sorting__colortext">Travel Visa</span>
+                  Check.<br />Find Visa information for<br />
+                  <span class="sorting__colortext">All Countries.</span>
+                </h2>
+                <span class="sorting__text">
+                  Simplifying Travel Around The World.
+                </span>
+                <div class="sorting__button">
+                  <label class="sorting__width">
+                    <select
+                      class="sorting__control"
+                      id="country__from"
+                      autocomplete="off"
+                    >
+                      <option value="" selected="">From</option>
+                      <option
+                        value="SC_AT"
+                        data-wa="SC_AT"
+                        data-na="Austria"
+                        data-iso="at"
+                      >
+                        Austria
+                      </option>
+                      <option
+                        value="SC_BE"
+                        data-wa="SC_BE"
+                        data-na="Belgium"
+                        data-iso="be"
+                      >
+                        Belgium
+                      </option>
+                      <option
+                        value="SC_BG"
+                        data-wa="SC_BG"
+                        data-na="Bulgaria"
+                        data-iso="bg"
+                      >
+                        Bulgaria
+                      </option>
+                      <option
+                        value="SC_HR"
+                        data-wa="SC_HR"
+                        data-na="Croatia"
+                        data-iso="hr"
+                      >
+                        Croatia
+                      </option>
+                      <option
+                        value="SC_CY"
+                        data-wa="SC_CY"
+                        data-na="Cyprus"
+                        data-iso="cy"
+                      >
+                        Cyprus
+                      </option>
+                      <option
+                        value="SC_CZ"
+                        data-wa="SC_CZ"
+                        data-na="Czech Republic"
+                        data-iso="cz"
+                      >
+                        Czech Republic
+                      </option>
+                      <option
+                        value="SC_DK"
+                        data-wa="SC_DK"
+                        data-na="Denmark"
+                        data-iso="dk"
+                      >
+                        Denmark
+                      </option>
+                      <option
+                        value="SC_EE"
+                        data-wa="SC_EE"
+                        data-na="Estonia"
+                        data-iso="ee"
+                      >
+                        Estonia
+                      </option>
+                      <option
+                        value="SC_FI"
+                        data-wa="SC_FI"
+                        data-na="Finland"
+                        data-iso="fi"
+                      >
+                        Finland
+                      </option>
+                      <option
+                        value="SC_FR"
+                        data-wa="SC_FR"
+                        data-na="France"
+                        data-iso="fr"
+                      >
+                        France
+                      </option>
+                      <option
+                        value="SC_DE"
+                        data-wa="SC_DE"
+                        data-na="Germany"
+                        data-iso="de"
+                      >
+                        Germany
+                      </option>
+                      <option
+                        value="SC_GR"
+                        data-wa="SC_GR"
+                        data-na="Greece"
+                        data-iso="gr"
+                      >
+                        Greece
+                      </option>
+                      <option
+                        value="SC_IE"
+                        data-wa="SC_IE"
+                        data-na="Ireland"
+                        data-iso="ie"
+                      >
+                        Ireland
+                      </option>
+                      <option
+                        value="SC_IT"
+                        data-wa="SC_IT"
+                        data-na="Italy"
+                        data-iso="it"
+                      >
+                        Italy
+                      </option>
+                      <option
+                        value="SC_LV"
+                        data-wa="SC_LV"
+                        data-na="Latvia"
+                        data-iso="lv"
+                      >
+                        Latvia
+                      </option>
+                      <option
+                        value="SC_LT"
+                        data-wa="SC_LT"
+                        data-na="Lithuania"
+                        data-iso="lt"
+                      >
+                        Lithuania
+                      </option>
+                      <option
+                        value="SC_LU"
+                        data-wa="SC_LU"
+                        data-na="Luxembourg"
+                        data-iso="lu"
+                      >
+                        Luxembourg
+                      </option>
+                      <option
+                        value="SC_MT"
+                        data-wa="SC_MT"
+                        data-na="Malta"
+                        data-iso="mt"
+                      >
+                        Malta
+                      </option>
+                      <option
+                        value="SC_NL"
+                        data-wa="SC_NL"
+                        data-na="Netherlands"
+                        data-iso="nl"
+                      >
+                        Netherlands
+                      </option>
+                      <option
+                        value="SC_PL"
+                        data-wa="SC_PL"
+                        data-na="Poland"
+                        data-iso="pl"
+                      >
+                        Poland
+                      </option>
+                      <option
+                        value="SC_PT"
+                        data-wa="SC_PT"
+                        data-na="Portugal"
+                        data-iso="pt"
+                      >
+                        Portugal
+                      </option>
+                      <option
+                        value="SC_RO"
+                        data-wa="SC_RO"
+                        data-na="Romania"
+                        data-iso="ro"
+                      >
+                        Romania
+                      </option>
+                      <option
+                        value="SC_SK"
+                        data-wa="SC_SK"
+                        data-na="Slovakia"
+                        data-iso="sk"
+                      >
+                        Slovakia
+                      </option>
+                      <option
+                        value="SC_SI"
+                        data-wa="SC_SI"
+                        data-na="Slovenia"
+                        data-iso="si"
+                      >
+                        Slovenia
+                      </option>
+                      <option
+                        value="SC_ES"
+                        data-wa="SC_ES"
+                        data-na="Spain"
+                        data-iso="es"
+                      >
+                        Spain
+                      </option>
+                      <option
+                        value="SC_SE"
+                        data-wa="SC_SE"
+                        data-na="Sweden"
+                        data-iso="se"
+                      >
+                        Sweden
+                      </option>
+                      <option
+                        value="LC_UK"
+                        data-wa="LC_UK"
+                        data-na="Ukraine"
+                        data-iso="uk"
+                      >
+                        Ukraine
+                      </option>
+                      <option
+                        value="SC_GB"
+                        data-wa="SC_GB"
+                        data-na="United Kingdom"
+                        data-iso="gb"
+                      >
+                        United Kingdom
+                      </option>
+                      <option
+                        value="SC_US"
+                        data-wa="SC_US"
+                        data-na="United States"
+                        data-iso="us"
+                      >
+                        United States
+                      </option>
+                      <option
+                        value="SC_ROTW"
+                        data-wa="SC_ROTW"
+                        data-na="ROTW"
+                        data-iso="eu"
+                      >
+                        Rest of the world (no shipping)
+                      </option>
+                    </select>
+                  </label>
+                  <label class="sorting__width">
+                    <select
+                      class="sorting__control"
+                      id="country_to"
+                      autocomplete="off"
+                    >
+                      <option value="" selected="">TO</option>
+                      <option
+                        value="SC_AT"
+                        data-wa="SC_AT"
+                        data-na="Austria"
+                        data-iso="at"
+                      >
+                        Austria
+                      </option>
+                      <option
+                        value="SC_BE"
+                        data-wa="SC_BE"
+                        data-na="Belgium"
+                        data-iso="be"
+                      >
+                        Belgium
+                      </option>
+                      <option
+                        value="SC_BG"
+                        data-wa="SC_BG"
+                        data-na="Bulgaria"
+                        data-iso="bg"
+                      >
+                        Bulgaria
+                      </option>
+                      <option
+                        value="SC_HR"
+                        data-wa="SC_HR"
+                        data-na="Croatia"
+                        data-iso="hr"
+                      >
+                        Croatia
+                      </option>
+                      <option
+                        value="SC_CY"
+                        data-wa="SC_CY"
+                        data-na="Cyprus"
+                        data-iso="cy"
+                      >
+                        Cyprus
+                      </option>
+                      <option
+                        value="SC_CZ"
+                        data-wa="SC_CZ"
+                        data-na="Czech Republic"
+                        data-iso="cz"
+                      >
+                        Czech Republic
+                      </option>
+                      <option
+                        value="SC_DK"
+                        data-wa="SC_DK"
+                        data-na="Denmark"
+                        data-iso="dk"
+                      >
+                        Denmark
+                      </option>
+                      <option
+                        value="SC_EE"
+                        data-wa="SC_EE"
+                        data-na="Estonia"
+                        data-iso="ee"
+                      >
+                        Estonia
+                      </option>
+                      <option
+                        value="SC_FI"
+                        data-wa="SC_FI"
+                        data-na="Finland"
+                        data-iso="fi"
+                      >
+                        Finland
+                      </option>
+                      <option
+                        value="SC_FR"
+                        data-wa="SC_FR"
+                        data-na="France"
+                        data-iso="fr"
+                      >
+                        France
+                      </option>
+                      <option
+                        value="SC_DE"
+                        data-wa="SC_DE"
+                        data-na="Germany"
+                        data-iso="de"
+                      >
+                        Germany
+                      </option>
+                      <option
+                        value="SC_GR"
+                        data-wa="SC_GR"
+                        data-na="Greece"
+                        data-iso="gr"
+                      >
+                        Greece
+                      </option>
+                      <option
+                        value="SC_IE"
+                        data-wa="SC_IE"
+                        data-na="Ireland"
+                        data-iso="ie"
+                      >
+                        Ireland
+                      </option>
+                      <option
+                        value="SC_IT"
+                        data-wa="SC_IT"
+                        data-na="Italy"
+                        data-iso="it"
+                      >
+                        Italy
+                      </option>
+                      <option
+                        value="SC_LV"
+                        data-wa="SC_LV"
+                        data-na="Latvia"
+                        data-iso="lv"
+                      >
+                        Latvia
+                      </option>
+                      <option
+                        value="SC_LT"
+                        data-wa="SC_LT"
+                        data-na="Lithuania"
+                        data-iso="lt"
+                      >
+                        Lithuania
+                      </option>
+                      <option
+                        value="SC_LU"
+                        data-wa="SC_LU"
+                        data-na="Luxembourg"
+                        data-iso="lu"
+                      >
+                        Luxembourg
+                      </option>
+                      <option
+                        value="SC_MT"
+                        data-wa="SC_MT"
+                        data-na="Malta"
+                        data-iso="mt"
+                      >
+                        Malta
+                      </option>
+                      <option
+                        value="SC_NL"
+                        data-wa="SC_NL"
+                        data-na="Netherlands"
+                        data-iso="nl"
+                      >
+                        Netherlands
+                      </option>
+                      <option
+                        value="SC_PL"
+                        data-wa="SC_PL"
+                        data-na="Poland"
+                        data-iso="pl"
+                      >
+                        Poland
+                      </option>
+                      <option
+                        value="SC_PT"
+                        data-wa="SC_PT"
+                        data-na="Portugal"
+                        data-iso="pt"
+                      >
+                        Portugal
+                      </option>
+                      <option
+                        value="SC_RO"
+                        data-wa="SC_RO"
+                        data-na="Romania"
+                        data-iso="ro"
+                      >
+                        Romania
+                      </option>
+                      <option
+                        value="SC_SK"
+                        data-wa="SC_SK"
+                        data-na="Slovakia"
+                        data-iso="sk"
+                      >
+                        Slovakia
+                      </option>
+                      <option
+                        value="SC_SI"
+                        data-wa="SC_SI"
+                        data-na="Slovenia"
+                        data-iso="si"
+                      >
+                        Slovenia
+                      </option>
+                      <option
+                        value="SC_ES"
+                        data-wa="SC_ES"
+                        data-na="Spain"
+                        data-iso="es"
+                      >
+                        Spain
+                      </option>
+                      <option
+                        value="SC_SE"
+                        data-wa="SC_SE"
+                        data-na="Sweden"
+                        data-iso="se"
+                      >
+                        Sweden
+                      </option>
+                      <option
+                        value="LC_UK"
+                        data-wa="LC_UK"
+                        data-na="Ukraine"
+                        data-iso="uk"
+                      >
+                        Ukraine
+                      </option>
+                      <option
+                        value="SC_GB"
+                        data-wa="SC_GB"
+                        data-na="United Kingdom"
+                        data-iso="gb"
+                      >
+                        United Kingdom
+                      </option>
+                      <option
+                        value="SC_US"
+                        data-wa="SC_US"
+                        data-na="United States"
+                        data-iso="us"
+                      >
+                        United States
+                      </option>
+                      <option
+                        value="SC_ROTW"
+                        data-wa="SC_ROTW"
+                        data-na="ROTW"
+                        data-iso="eu"
+                      >
+                        Rest of the world (no shipping)
+                      </option>
+                    </select>
+                  </label>
+                  <button class="sorting__submit button" type="submit">
+                    Get Started
+                  </button>
+                </div>
+              </div>
+              <div class="sorting__img">
+                <img src="/img/main.png" alt="tourist" />
+              </div>
+              <div class="sorting__bandicon">
+                <img src="/img/rightBand.png" alt="tourist" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="metrics">
+          <div class="wrapper">
+            <ul class="metrics__inner">
+              <li class="metrics__text">
+                <h3 class="metrics__title">Our 18 years of achievements</h3>
+                <p class="metrics__description">
+                  Trustpilot Rcommended. We lead the industry in innovation and
+                  <br />reputation<br />
+                </p>
+              </li>
+              <li class="metrics__item metrics__item--customers">
+                <div class="metrics__img">
+                  <img src="/img/HappyCustomers.png" alt="icon advantages" />
+                </div>
+                <div class="metrics__paragraph">
+                  <h3 class="metrics__heading">2 Million</h3>
+                  <span class="metrics__inform"> Happy Customers </span>
+                </div>
+              </li>
+              <li class="metrics__item metrics__item--experience">
+                <div class="metrics__img">
+                  <img src="/img/yearOfExperience.png" alt="icon advantages" />
+                </div>
+                <div class="metrics__paragraph">
+                  <h3 class="metrics__heading">10</h3>
+                  <span class="metrics__inform"> Year of Experience </span>
+                </div>
+              </li>
+              <li class="metrics__item metrics__item--delivery">
+                <div class="metrics__img">
+                  <img src="/img/OnTimeDelivery.png" alt="icon advantages" />
+                </div>
+                <div class="metrics__paragraph">
+                  <h3 class="metrics__heading">90%</h3>
+                  <span class="metrics__inform"> On Time Delivery </span>
+                </div>
+              </li>
+              <li class="metrics__item metrics__item--trustpilot">
+                <div class="metrics__img">
+                  <img src="/img/Trustpilot.png" alt="icon advantages" />
+                </div>
+                <div class="metrics__paragraph">
+                  <div class="metrics__rating">
+                    <h3 class="metrics__heading">4.5</h3>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="26"
+                      viewBox="0 0 28 26"
+                      fill="none"
+                    >
+                      <path
+                        d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z"
+                        fill="#F3B411"
+                      />
+                    </svg>
+                  </div>
+                  <span class="metrics__inform"> Trustpilot </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="destinations">
+          <div class="wrapper">
+            <div class="destinations__navigation">
+              <h3 class="destinations__heading">Most Popular Destinations</h3>
+              <div class="destinations__arrows">
+                <button
+                  class="destinations__btn destinations__btn--prev"
+                  type="button"
+                >
+                  <svg width="54" height="54">
+                    <use xlink:href="#toggle-left" />
+                  </svg>
+                </button>
+                <button
+                  class="destinations__btn destinations__btn--next"
+                  type="button"
+                >
+                  <svg width="54" height="54">
+                    <use xlink:href="#toggle-right" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="destinations__box">
+              <div class="destinations__list">
+                <div class="destinations__item">
+                  <a class="destinations__link" href="#">
+                    <div class="destinations__img">
+                      <img
+                        src="/img/AU.png"
+                        alt="sightAustralia"
+                        width="288"
+                        height="186"
+                      />
+                    </div>
+                  </a>
+                  <div class="destinations__inner">
+                    <div class="destinations__text">
+                      <div class="destinations__icon">
+                        <img
+                          src="/img/Australia.png"
+                          alt="flagAustralia"
+                          width="42"
+                          height="32"
+                        />
+                      </div>
+                      <h3 class="destinations__title">Australia (AU)</h3>
+                    </div>
+                    <a href="#" class="destinations__button">Learn More</a>
+                  </div>
+                </div>
+                <div class="destinations__item">
+                  <a class="destinations__link" href="#">
+                    <div class="destinations__img">
+                      <img
+                        src="/img/CO.png"
+                        alt="sightColombai"
+                        width="288"
+                        height="186"
+                      />
+                    </div>
+                  </a>
+                  <div class="destinations__inner">
+                    <div class="destinations__text">
+                      <div class="destinations__icon">
+                        <img
+                          src="/img/Colombai.png"
+                          alt="flagColombai"
+                          width="42"
+                          height="32"
+                        />
+                      </div>
+                      <h3 class="destinations__title">Colombai (CO)</h3>
+                    </div>
+                    <a href="#" class="destinations__button">Learn More</a>
+                  </div>
+                </div>
+                <div class="destinations__item">
+                  <a class="destinations__link" href="#">
+                    <div class="destinations__img">
+                      <img
+                        src="/img/IN.png"
+                        alt="sightIndia"
+                        width="288"
+                        height="186"
+                      />
+                    </div>
+                  </a>
+                  <div class="destinations__inner">
+                    <div class="destinations__text">
+                      <div class="destinations__icon">
+                        <img
+                          src="/img/India.png"
+                          alt="flagIndia"
+                          width="42"
+                          height="32"
+                        />
+                      </div>
+                      <h3 class="destinations__title">India (IN)</h3>
+                    </div>
+                    <a href="#" class="destinations__button">Learn More</a>
+                  </div>
+                </div>
+                <div class="destinations__item">
+                  <a class="destinations__link" href="#">
+                    <div class="destinations__img">
+                      <img
+                        src="/img/SA.png"
+                        alt="sightArbia"
+                        width="288"
+                        height="186"
+                      />
+                    </div>
+                  </a>
+                  <div class="destinations__inner">
+                    <div class="destinations__text">
+                      <div class="destinations__icon">
+                        <img
+                          src="/img/SaudiArbia.png"
+                          alt="flagSaudiArbia"
+                          width="42"
+                          height="32"
+                        />
+                      </div>
+                      <h3 class="destinations__title">Saudi Arbia (SA)</h3>
+                    </div>
+                    <a href="#" class="destinations__button">Learn More</a>
+                  </div>
+                </div>
+                <div class="destinations__item">
+                  <a class="destinations__link" href="#">
+                    <div class="destinations__img">
+                      <img
+                        src="/img/AU.png"
+                        alt="sightAustralia"
+                        width="288"
+                        height="186"
+                      />
+                    </div>
+                  </a>
+                  <div class="destinations__inner">
+                    <div class="destinations__text">
+                      <div class="destinations__icon">
+                        <img
+                          src="/img/Australia.png"
+                          alt="flagAustralia"
+                          width="42"
+                          height="32"
+                        />
+                      </div>
+                      <h3 class="destinations__title">Australia (AU)</h3>
+                    </div>
+                    <a href="#" class="destinations__button">Learn More</a>
+                  </div>
+                </div>
+                <div class="destinations__item">
+                  <a class="destinations__link" href="#">
+                    <div class="destinations__img">
+                      <img
+                        src="/img/CO.png"
+                        alt="sightColombai"
+                        width="288"
+                        height="186"
+                      />
+                    </div>
+                  </a>
+                  <div class="destinations__inner">
+                    <div class="destinations__text">
+                      <div class="destinations__icon">
+                        <img
+                          src="/img/Colombai.png"
+                          alt="flagColombai"
+                          width="42"
+                          height="32"
+                        />
+                      </div>
+                      <h3 class="destinations__title">Colombai (CO)</h3>
+                    </div>
+                    <a href="#" class="destinations__button">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="features">
+          <div class="wrapper">
+            <h2 class="features__heading">Why Choose Us</h2>
+            <ul class="features__list">
+              <li class="features__inner">
+                <div class="features__img">
+                  <img
+                    src="/img/SpeedAndSimplicity.png"
+                    alt="featuresIcon"
+                    width="32"
+                    height="32"
+                  />
+                </div>
+                <h3 class="features__title">Speed and Simplicity</h3>
+                <p class="features__paragraph">
+                  Easy,traveler-friendly<br />
+                  application process. Simple and much less compicated than
+                  dealing with foregn government.
+                </p>
+              </li>
+              <li class="features__inner">
+                <div class="features__img">
+                  <img
+                    src="/img/GetApproved.png"
+                    alt="featuresIcon"
+                    width="29"
+                    height="29"
+                  />
+                </div>
+                <h3 class="features__title">Get Approved</h3>
+                <p class="features__paragraph">
+                  Easy,traveler-friendly<br />
+                  application process. Simple and much less compicated than
+                  dealing with foregn government.
+                </p>
+              </li>
+              <li class="features__inner">
+                <div class="features__img">
+                  <img
+                    src="/img/SecureAndSafe.png"
+                    alt="featuresIcon"
+                    width="29"
+                    height="29"
+                  />
+                </div>
+                <h3 class="features__title">Secure And Safe</h3>
+                <p class="features__paragraph">
+                  Easy,traveler-friendly<br />
+                  application process. Simple and much less compicated than
+                  dealing with foregn government.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="testimonial">
+          <div class="wrapper">
+            <h2 class="testimonial__heading">How it Work</h2>
+            <ul class="testimonial__list">
+              <li class="testimonial__item">
+                <a class="testimonial__link testimonial__link--active" href="#"
+                  >Electronic Visa (e-visa)</a
+                >
+              </li>
+              <li class="testimonial__item">
+                <a class="testimonial__link" href="#">e-Visa on Arrival</a>
+              </li>
+              <li class="testimonial__item">
+                <a class="testimonial__link" href="#">Health Declaration</a>
+              </li>
+              <li class="testimonial__item">
+                <a class="testimonial__link" href="#">Guided Application</a>
+              </li>
+            </ul>
+            <ul class="testimonial__points">
+              <li class="testimonial__inner">
+                <h3 class="testimonial__title">Full out online Application</h3>
+                <div class="testimonial__img">
+                  <img
+                    src="/img/FullOutOnlineApplication.png"
+                    alt="testimonialIcon"
+                    width="191"
+                    height="191"
+                  />
+                </div>
+                <p class="testimonial__paragraph">
+                  Computer our easy online applicaTion<br />
+                  and pay with credit card or palpay
+                </p>
+              </li>
+              <li class="testimonial__inner">
+                <h3 class="testimonial__title">Full out online Application</h3>
+                <div class="testimonial__img">
+                  <img
+                    src="/img/ReceiveDocument.png"
+                    alt="testimonialIcon"
+                    width="191"
+                    height="191"
+                  />
+                </div>
+                <p class="testimonial__paragraph">
+                  No need to deal with the embasy.<br />
+                  we do it for you so you don’t lose<br />
+                  valuable time.
+                </p>
+              </li>
+              <li class="testimonial__inner">
+                <h3 class="testimonial__title">Enter destination</h3>
+                <div class="testimonial__img">
+                  <img
+                    src="/img/EnterDestination.png"
+                    alt="testimonialIcon"
+                    width="191"
+                    height="191"
+                  />
+                </div>
+                <p class="testimonial__paragraph">
+                  Presend your Passport anddocument<br />
+                  we provide uupon entry to<br />
+                  destination country
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="reviews">
+          <div class="wrapper">
+            <h2 class="reviews__heading">
+              Our Customers Have Greate Stories About Us
+            </h2>
+            <ul class="reviews__list">
+              <li class="reviews__inner">
+                <div class="reviews__img">
+                  <img
+                    src="/img/PritamGajjar.png"
+                    alt="customer"
+                    width="60"
+                    height="60"
+                  />
+                </div>
+                <div class="reviews__icon">
+                  <img
+                    src="/img/Vector.png"
+                    alt="icon"
+                    width="42"
+                    height="32"
+                  />
+                </div>
+                <div class="reviews__star">
+                  <span>★</span><span>★</span><span>★</span><span>★</span
+                  ><span>★</span>
+                </div>
+                <h3 class="reviews__authorname">Pritam Gajjar</h3>
+                <p class="reviews__paragraph">
+                  Edu line is a Global training provider based across the UK
+                  that specialises in accrediated and bespoke training courses.
+                </p>
+              </li>
+              <li class="reviews__inner">
+                <div class="reviews__img">
+                  <img
+                    src="/img/RowhanMarlin.png"
+                    alt="customer"
+                    width="60"
+                    height="60"
+                  />
+                </div>
+                <div class="reviews__icon">
+                  <img
+                    src="/img/Vector.png"
+                    alt="icon"
+                    width="42"
+                    height="32"
+                  />
+                </div>
+                <div class="reviews__star">
+                  <span>★</span><span>★</span><span>★</span><span>★</span
+                  ><span>★</span>
+                </div>
+                <h3 class="reviews__authorname">Rowhan Marlin</h3>
+                <p class="reviews__paragraph">
+                  Edu line is a Global training provider based across the UK
+                  that specialises in accrediated and bespoke training courses.
+                </p>
+              </li>
+              <li class="reviews__inner">
+                <div class="reviews__img">
+                  <img
+                    src="/img/SarahBrown.png"
+                    alt="customer"
+                    width="60"
+                    height="60"
+                  />
+                </div>
+                <div class="reviews__icon">
+                  <img
+                    src="/img/Vector.png"
+                    alt="icon"
+                    width="42"
+                    height="32"
+                  />
+                </div>
+                <div class="reviews__star">
+                  <span>★</span><span>★</span><span>★</span><span>★</span
+                  ><span>★</span>
+                </div>
+                <h3 class="reviews__authorname">Sarah Brown</h3>
+                <p class="reviews__paragraph">
+                  Edu line is a Global training provider based across the UK
+                  that specialises in accrediated and bespoke training courses.
+                </p>
+              </li>
+              <li class="reviews__inner">
+                <div class="reviews__img">
+                  <img
+                    src="/img/PritamGajjar.png"
+                    alt="customer"
+                    width="60"
+                    height="60"
+                  />
+                </div>
+                <div class="reviews__icon">
+                  <img
+                    src="/img/Vector.png"
+                    alt="icon"
+                    width="42"
+                    height="32"
+                  />
+                </div>
+
+                <div class="reviews__star">
+                  <span>★</span><span>★</span><span>★</span><span>★</span
+                  ><span>★</span>
+                </div>
+                <h3 class="reviews__authorname">Pritam Gajjar</h3>
+                <p class="reviews__paragraph">
+                  Edu line is a Global training provider based across the UK
+                  that specialises in accrediated and bespoke training courses.
+                </p>
+              </li>
+              <li class="reviews__inner">
+                <div class="reviews__img">
+                  <img
+                    src="/img/RowhanMarlin.png"
+                    alt="customer"
+                    width="60"
+                    height="60"
+                  />
+                </div>
+                <div class="reviews__icon">
+                  <img
+                    src="/img/Vector.png"
+                    alt="icon"
+                    width="42"
+                    height="32"
+                  />
+                </div>
+                <div class="reviews__star">
+                  <span>★</span><span>★</span><span>★</span><span>★</span
+                  ><span>★</span>
+                </div>
+                <h3 class="reviews__authorname">Rowhan Marlin</h3>
+                <p class="reviews__paragraph">
+                  Edu line is a Global training provider based across the UK
+                  that specialises in accrediated and bespoke training courses.
+                </p>
+              </li>
+              <li class="reviews__inner">
+                <div class="reviews__img">
+                  <img
+                    src="/img/SarahBrown.png"
+                    alt="customer"
+                    width="60"
+                    height="60"
+                  />
+                </div>
+                <div class="reviews__icon">
+                  <img
+                    src="/img/Vector.png"
+                    alt="icon"
+                    width="42"
+                    height="32"
+                  />
+                </div>
+                <div class="reviews__star">
+                  <span>★</span><span>★</span><span>★</span><span>★</span
+                  ><span>★</span>
+                </div>
+                <h3 class="reviews__authorname">Sarah Brown</h3>
+                <p class="reviews__paragraph">
+                  Edu line is a Global training provider based across the UK
+                  that specialises in accrediated and bespoke training courses.
+                </p>
+              </li>
+            </ul>
+            <div class="reviews__arrows">
+              <button class="reviews__btn reviews__btn--prev" type="button">
+                <svg width="54" height="54">
+                  <use xlink:href="#toggle-left" />
+                </svg>
+              </button>
+              <button class="reviews__btn reviews__btn--next" type="button">
+                <svg width="54" height="54">
+                  <use xlink:href="#toggle-right" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="wrapper">
+          <ul class="main-list">
+            <li class="main-list__block--first">
+              <h3 class="main-list__titlelogo">
+                <a href="#" class="main-list__logo">
+                  <img
+                    class="main-list__card"
+                    src="/img/logo.png"
+                    alt="icon-logo"
+                  />
+                </a>
+              </h3>
+              <ul class="sublist">
+                <li class="sublist__item">
+                  <a class="sublist__link" href="mailaddress:Info@eduline..net"
+                    >Info@eduline..net</a
+                  >
+                </li>
+                <li class="sublist__item">
+                  <a class="sublist__link" href="numberphone">+4588435849</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-list__block">
+              <h3 class="main-list__title">Login</h3>
+              <ul class="sublist">
+                <li class="sublist__item">
+                  <a class="sublist__link" href="#">Professors / Students</a>
+                </li>
+                <li class="sublist__item">
+                  <a class="sublist__link" href="#">Bookstores</a>
+                </li>
+                <li class="sublist__item">
+                  <a class="sublist__link" href="#">Publishers</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-list__block">
+              <h3 class="main-list__title">About</h3>
+              <ul class="sublist">
+                <li class="sublist__item">
+                  <a class="sublist__link" href="#">Contacts</a>
+                </li>
+                <li class="sublist__item">
+                  <a class="sublist__link" href="#">About us</a>
+                </li>
+                <li class="sublist__item">
+                  <a class="sublist__link" href="#">FAQ</a>
+                </li>
+                <li class="sublist__item">
+                  <a class="sublist__link" href="#">Applay us</a>
+                </li>
+                <li class="sublist__item">
+                  <a class="sublist__link" href="#">Terms of service</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-list__block">
+              <h3 class="main-list__title">Product</h3>
+              <ul class="sublist">
+                <li class="sublist__item">
+                  <a class="sublist__link" href="#">Terms of use</a>
+                </li>
+                <li class="sublist__item">
+                  <a class="sublist__link" href="#">Privacy policy</a>
+                </li>
+                <li class="sublist__item">
+                  <a class="sublist__link" href="#">Log in</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-list__block">
+              <h3 class="main-list__title">QR Code</h3>
+              <ul class="sublist">
+                <li class="sublist__item">
+                  <a class="sublist__link" href="#">
+                    <img
+                      src="img/qrCode.png"
+                      width="156"
+                      height="156"
+                      alt="qrCode."
+                    />
+                    <span class="sublist__qrkod"
+                      >scan the QR code to download the visa app</span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="icon__main">
+            <ul class="icon__list">
+              <li class="icon__item">
+                <a class="icon__link" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="16"
+                    viewBox="0 0 19 16"
+                    fill="none"
+                  >
+                    <path
+                      opacity=".8"
+                      d="M2.253 3.264a.806.806 0 0 0-.24-.658L.24.339V0h5.509l4.258 9.905L13.749 0H19v.339L17.483 1.88a.485.485 0 0 0-.168.452v11.334a.485.485 0 0 0 .168.452l1.482 1.542V16h-7.451v-.339l1.534-1.58c.15-.16.15-.207.15-.451V4.468L8.933 15.962h-.576L3.388 4.468v7.704c-.041.324.06.65.275.884l1.996 2.568v.338H0v-.338l1.996-2.568c.213-.235.309-.563.257-.884V3.264Z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="icon__item">
+                <a class="icon__link" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="10"
+                    height="20"
+                    viewBox="0 0 10 20"
+                    fill="none"
+                  >
+                    <path
+                      opacity=".8"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2.201 10.076v9.663c0 .13.117.261.281.261h3.865c.14 0 .28-.109.28-.261V9.902h2.788c.14 0 .257-.109.28-.24l.235-2.937c.023-.153-.117-.283-.281-.283H6.604v-2.09c0-.5.422-.892.96-.892H9.72c.14 0 .281-.109.281-.26V.26C10 .131 9.883 0 9.719 0H6.066C3.934 0 2.2 1.61 2.2 3.59v2.852H.281c-.14 0-.281.109-.281.26v2.96c0 .131.117.262.281.262h1.92v.152Z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="icon__item">
+                <a class="icon__link" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="16"
+                    viewBox="0 0 20 16"
+                    fill="none"
+                  >
+                    <path
+                      opacity=".8"
+                      d="M20 1.895a8.654 8.654 0 0 1-2.363.638A4.026 4.026 0 0 0 19.441.3c-.803.47-1.682.8-2.6.977a4.115 4.115 0 0 0-2.094-1.18 4.16 4.16 0 0 0-2.406.185 4.089 4.089 0 0 0-1.884 1.485A3.993 3.993 0 0 0 9.75 4.04c-.003.309.029.617.095.92A11.749 11.749 0 0 1 5.16 3.736 11.573 11.573 0 0 1 1.392.737a3.985 3.985 0 0 0-.457 2.944 4.039 4.039 0 0 0 1.716 2.452A4.098 4.098 0 0 1 .8 5.635v.044c.001.932.328 1.836.927 2.558a4.13 4.13 0 0 0 2.358 1.41c-.35.09-.712.135-1.075.132a3.68 3.68 0 0 1-.776-.069 4.078 4.078 0 0 0 1.462 2.005 4.18 4.18 0 0 0 2.37.807A8.321 8.321 0 0 1 .98 14.244 7.794 7.794 0 0 1 0 14.188 11.676 11.676 0 0 0 6.29 16c7.545 0 11.67-6.153 11.67-11.487 0-.179-.006-.35-.015-.522A8.11 8.11 0 0 0 20 1.895Z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="icon__item">
+                <a class="icon__link" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <g opacity=".8" fill="#fff">
+                      <path
+                        d="M9.983 13.33a3.33 3.33 0 1 1 0-6.66 3.33 3.33 0 0 1 0 6.66Z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19.48 3.45c.285.78.44 1.6.46 2.43C20 6.94 20 7.28 20 10c0 1.675-.023 2.447-.04 3.04-.011.372-.02.673-.02 1.08-.02.83-.175 1.65-.46 2.43a4.85 4.85 0 0 1-1.16 1.77 4.7 4.7 0 0 1-1.77 1.15 7.3 7.3 0 0 1-2.43.47c-1.06.06-1.4.06-4.12.06s-3.06 0-4.12-.06a7.3 7.3 0 0 1-2.43-.47 4.78 4.78 0 0 1-1.77-1.15 4.7 4.7 0 0 1-1.15-1.77 7.3 7.3 0 0 1-.47-2.43C0 13.06 0 12.72 0 10s0-3.06.06-4.12a7.3 7.3 0 0 1 .47-2.43 4.7 4.7 0 0 1 1.15-1.77A4.78 4.78 0 0 1 3.45.53 7.3 7.3 0 0 1 5.88.06C6.94 0 7.28 0 10 0s3.06 0 4.12.06a7.3 7.3 0 0 1 2.43.47 4.7 4.7 0 0 1 1.77 1.15c.51.5.906 1.103 1.16 1.77Zm-4.155.009a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Zm-5.342 1.41a5.13 5.13 0 1 0 5.14 5.13 5.12 5.12 0 0 0-5.14-5.13Z"
+                      />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <span class="icon__title">Contact with us</span>
+          </div>
+        </div>
+      </footer>
+      <button class="button-up">
+        <span class="visually-hidden">button up</span>
+      </button>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="/js/sliderToggle.js"></script>
+    </div>
+  </body>
+</html>

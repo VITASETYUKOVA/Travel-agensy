@@ -1,0 +1,85 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  hyphens: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;  // Если высота задана в процентах, то проценты берутся от высоты родительского контейнера(html => body => .wrapper). Если явно не задавать высоту родителям .wrapper браузер установит высоту этого блока в зависимости от высоты его содержимого. это необходимо для прижимания футера к низу страницы в тех случаях, когда высота контента не позволяет этого сделать//
+  font-family: $main-font;
+  
+  line-height: 21px;
+  font-weight: 400;
+  background-color: rgba(245, 246, 246, 0.70);
+backdrop-filter: blur(50px);
+
+  // overflow: hidden; //необходим, чтобы ничего не выпадало за пределы страницы//
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+blockquote {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+
+address {
+  font-style: normal;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.wrapper {
+  max-width: 1310px;  //ширина макета//
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;  //центрируем макет//
+  
+}
+
+div {
+  img {
+    display: block;  //картинка становится блочным элементом//
+  }
+}
+
+
+

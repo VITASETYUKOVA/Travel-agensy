@@ -1,0 +1,213 @@
+.testimonial {
+  padding: 90px 80px 124px 80px;
+
+  @media (max-width: $size-screen-tablet) {
+    padding: 40px 0 40px 0;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    padding: 20px 0 40px 0;
+  }
+}
+
+.testimonial__heading {
+  color: $main-color-text;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 40px;
+  text-align: center;
+
+  @media (max-width: $size-screen-tablet) {
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+}
+
+.testimonial__list {
+  border-radius: 12px;
+  background: $color-background-2;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08);
+  display: flex;
+
+  @media (max-width: $size-screen-tablet) {
+    display: block;
+    background: none;
+    box-shadow: none;
+    text-align: center;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    display: block;
+    background: none;
+    box-shadow: none;
+    text-align: center;
+  }
+}
+
+.testimonial__link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  padding: 19px 62px;
+  text-align: center;
+  min-width: 280px;
+  color: $main-color-text;
+  margin-right: 50px;
+  background-clip: padding-box;
+  cursor: pointer;
+
+  @media (max-width: $size-screen-tablet) {
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    font-size: 13px;
+    margin: 0;
+  }
+
+  &:hover,
+  &:active {
+    border-radius: 12px;
+    color: $main-color-text-hover;
+  }
+
+  &:hover {
+    background-color: $main-color-text-hover;
+  }
+
+  &:active {
+    background-color: $main-color-text;
+  }
+}
+
+.testimonial__link:last-child {
+  margin-left: auto;
+}
+
+.testimonial__link--active {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color:$color-text-1;
+  border-radius: 12px;
+  background: $color-background;
+
+  @media (max-width: $size-screen-tablet) {
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    font-size: 13px;
+  }
+
+  &:hover,
+  &:active {
+    color: $main-color-text-hover;
+  }
+
+  &:hover {
+    background-color: $main-color-text-hover;
+  }
+
+  &:active {
+    background-color: $main-color-text;
+  }
+}
+
+.testimonial__points {
+  display: grid;
+  align-items: end;
+  gap: 61px;
+  grid-template-columns: repeat(3, 348px);
+  margin-top: 98px;
+  justify-content: center;
+
+  @media (max-width: $size-screen-tablet) {
+    grid-template-columns: repeat(3, 300px);
+    gap: 10px;
+    margin-top: 40px;
+  }
+  @media (max-width: $size-screen-mobile) {
+    display: block;
+    margin-top: 50px;
+  }
+}
+
+.testimonial__img {
+  @media (max-width: $size-screen-tablet) {
+    align-self: center;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    margin: 0 auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.testimonial__inner {
+  border-radius: 12px;
+  border: 2px solid rgba(124, 58, 237, 0.12);
+  padding-right: 40px 24px 14px 24px;
+  background: $color-background-2;
+  min-height: 352px;
+
+  @media (max-width: $size-screen-mobile) {
+    margin-bottom: 20px;
+  }
+}
+
+.testimonial__title {
+  color: $main-color-text;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  text-align: center;
+  margin-bottom: 12px;
+  margin-top: 40px;
+
+  @media (max-width: $size-screen-mobile) {
+    margin-top: 12px;
+  }
+}
+
+.testimonial__paragraph {
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 500;
+  color: $main-color-text;
+  text-align: center;
+  letter-spacing: -0.45px;
+  align-items: end;
+  margin-top: 14px;
+
+  @media (max-width: $size-screen-tablet) {
+    font-size: 16px;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+}
